@@ -11,9 +11,25 @@ Below is a typical screen of the application running in a Win 7 machine.
 </p>
 # How to use the application (.jar) / (Running the binaries)
 <p>
-A JRE 1.8 or later is required to run the application. Download the zip and unzip dist folder to a convinient folder. Ensure that the following directories are present in the dist folder :- codes, icons, dist. These (folders)files are  neccessary for the app to run. If everyting is okay double clicking on the .jar file will launch the application. Enjoy
+A JRE 1.8 or later is required to run the application. Download the zip and unzip dist folder to a convinient folder. Ensure that the following directories are present in the decompressed folder 
++JavaFXQRGenerator - 1.0.3
+    +libs
+      -commons-io-2.4.jar
+      -Filters.jar
+      -qrgen-1.0.jar
+      -zxing-core-1.7.jar
+      -zxing-j2se-1.7.jar
+    +JavaFXQRGenerator.jar
+These (folders)files are  neccessary for the app to run. If everyting is okay double clicking on the .jar file will launch the application. Enjoy
 </p>
 # Setting up the project in Netbeans/Eclipse or any other IDE / (Compiling the sources)
+<p>
+This application has been developed on Netbeans platfrom (Netbeans 8.0.2). Just download the sources, & point
+netbeans to the downloaded sources. 
+Enjoy!!
+
+
+(C)ZiLabs 2015
 
 
 
