@@ -16,12 +16,15 @@ A JRE 1.8 or later is required to run the application. Download the zip and unzi
 <li>+JavaFXQRGenerator - 1.0.3</li>
     <ul>
     <li>+libs<br></li>
-      -commons-io-2.4.jar<br>
-      -Filters.jar<br>
-      -qrgen-1.0.jar<br>
-      -zxing-core-1.7.jar<br>
-      -zxing-j2se-1.7.jar<br>
-    +JavaFXQRGenerator.jar<br>
+    <ul>
+      <li>commons-io-2.4.jar</li>
+      <li>Filters.jar</li>
+      <li>qrgen-1.0.jar</li>
+      <li>zxing-core-1.7.jar</li>
+      <li>zxing-j2se-1.7.jar</li>
+    </ul>
+    <li>+JavaFXQRGenerator.jar</li>
+    </ul>
 </ul>
 These (folders)files are  neccessary for the app to run. If everyting is okay double clicking on the .jar file will launch the application. Enjoy
 </p>
