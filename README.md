@@ -7,7 +7,7 @@ The QR Generator app is a Java FX version of the QR Generator app. It relies on 
 Below is a typical screen of the application running in a Win 7 machine.
 </p>
 <p>
-<img src="https://www.dropbox.com/s/3o5h89hap22jjmm/shot_001.png?id=1"/>
+<img src="https://www.dropbox.com/s/3o5h89hap22jjmm/shot_001.png?raw=1"/>
 </p>
 # How to use the application (.jar) / (Running the binaries)
 <p>
