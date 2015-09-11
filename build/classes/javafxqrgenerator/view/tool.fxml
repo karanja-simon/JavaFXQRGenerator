@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="322.0" style="-fx-background-color: transparent;" stylesheets="@../css/CustomTooltip.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.ToolController">
+   <children>
+      <AnchorPane fx:id="apArrow" layoutX="126.0" layoutY="39.0" prefHeight="27.0" prefWidth="29.0" rotate="45.0" style="-fx-background-color: red;" styleClass="page-corner" />
+      <AnchorPane fx:id="apPopup" layoutY="9.0" prefHeight="49.0" prefWidth="299.0" style="-fx-background-color: red;" styleClass="mypage" AnchorPane.topAnchor="9.0">
+         <children>
+            <Label fx:id="lbMsg" alignment="CENTER" layoutX="16.0" layoutY="13.0" prefHeight="33.0" prefWidth="248.0" text="Please Provide QR Data Here!" textFill="#e6eff2" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="5.0">
+               <tooltip>
+                  <Tooltip styleClass="pageCorner" text="Enter yor data here for validation.." />
+               </tooltip>
+            </Label>
+            <Button layoutX="271.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/close-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

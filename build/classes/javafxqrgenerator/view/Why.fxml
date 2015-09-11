@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="468.0" style="-fx-background-color: transparent;" stylesheets="@../css/CustomTooltip.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.WhyController">
+   <children>
+      <AnchorPane fx:id="apPopup" layoutX="41.0" layoutY="33.0" prefHeight="330.0" prefWidth="326.0" style="-fx-border-color: gray; -fx-background-color: white;" styleClass="settings" stylesheets="@../css/Metro-UI.css">
+         <children>
+            <Button fx:id="btnClose" layoutX="282.0" layoutY="13.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="28.0" style="-fx-min-width: 10;" styleClass="btn" text="Button" AnchorPane.rightAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/close-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="14.0" layoutY="47.0" opacity="0.57" prefHeight="3.0" prefWidth="300.0" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="201.0" prefHeight="119.0" prefWidth="300.0" text="Currently, the application generates a 125 x 125 pixels image from the input. This implies that the larger the input, the denser is the QR image generated since the image size is fixed. This in effect makes it hard or impossible for QR scanner or cameras to decode the image. Now you know!" textAlignment="CENTER" wrapText="true" />
+            <ImageView fitHeight="202.0" fitWidth="185.0" layoutX="76.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img002.PNG" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="23.0" layoutY="14.0" prefHeight="28.0" prefWidth="274.0" text="Why Limited Input?" textFill="#fa2a07" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="208.0" layoutY="23.0" prefHeight="20.0" prefWidth="20.0" rotate="45.0" style="-fx-background-color: white; -fx-border-color: gray;" />
+      <AnchorPane layoutX="200.0" layoutY="33.0" prefHeight="20.0" prefWidth="38.0" style="-fx-background-color: white;" AnchorPane.topAnchor="34.0" />
+   </children>
+</AnchorPane>

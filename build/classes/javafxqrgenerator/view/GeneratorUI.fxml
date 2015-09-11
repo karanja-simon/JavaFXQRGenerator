@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="apWrapper" prefHeight="470.0" prefWidth="860.0" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.GeneratorUIController">
+   <children>
+      <AnchorPane layoutX="169.0" layoutY="14.0" prefHeight="451.0" prefWidth="261.0" style="-fx-border-color: white #dcdcdc white white; -fx-background-color: #FFF;" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Separator layoutX="14.0" layoutY="38.0" prefHeight="14.0" prefWidth="228.0" style="-fx-opacity: 0.4;" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="228.0" text="Preview Recent QR Image " />
+            <ImageView fx:id="ivPreview" fitHeight="119.0" fitWidth="93.0" layoutX="84.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="82.0">
+               <image>
+                  <Image url="@../resources/devqr.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="5.0" layoutY="154.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <children>
+                  <Label fx:id="lbSize" layoutX="104.0" layoutY="51.0" prefHeight="17.0" prefWidth="137.0" text="0.000912Kb" />
+                  <Label fx:id="lbDateGenerated" layoutX="104.0" prefHeight="17.0" prefWidth="137.0" text="12-07-2015 12:09:45" />
+                  <Label alignment="CENTER_RIGHT" layoutY="51.0" prefHeight="17.0" prefWidth="93.0" text="Size (Kb)" />
+                  <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="93.0" text="Date Generated" />
+                  <Label fx:id="lbDimension" layoutX="104.0" layoutY="24.0" prefHeight="17.0" prefWidth="137.0" text="24 x 24 px" />
+                  <Label alignment="CENTER_RIGHT" layoutY="24.0" prefHeight="17.0" prefWidth="93.0" text="Dimensions" />
+               </children>
+            </Pane>
+            <Separator layoutX="28.0" layoutY="256.0" prefWidth="200.0" style="-fx-opacity: 0.4;" />
+            <Label alignment="CENTER" layoutX="28.0" layoutY="233.0" prefHeight="17.0" prefWidth="200.0" text="QR Code Data" />
+            <Label fx:id="lbDecodedQRData" alignment="TOP_CENTER" layoutX="28.0" layoutY="266.0" prefHeight="68.0" prefWidth="200.0" text="Simon K&#10;+254711714306&#10;dev.zilabs@gmail.com&#10;All Rights Reserved (C) 2015. ZiLabs" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="btnExportFromRecent" layoutX="92.0" layoutY="393.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="93.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/export-blue-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="355.0" prefHeight="17.0" prefWidth="200.0" text="Export The Preview Below" />
+            <Separator layoutX="32.0" layoutY="380.0" prefWidth="200.0" style="-fx-opacity: 0.4;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="430.0" prefHeight="482.0" prefWidth="429.0" style="-fx-background-color: #FFF;" AnchorPane.leftAnchor="430.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <Pane layoutX="10.0" layoutY="13.0" prefHeight="463.0" prefWidth="419.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <children>
+                  <Label layoutX="4.0" prefHeight="17.0" prefWidth="192.0" text="New QR Code Image" />
+                  <Separator layoutX="104.0" layoutY="230.0" prefWidth="200.0" style="-fx-opacity: 0.4;" />
+                  <Label fx:id="lbExportOpt" alignment="CENTER" layoutX="124.0" layoutY="349.0" prefHeight="17.0" prefWidth="182.0" text="Export QR Image Below" />
+                  <Button fx:id="btnExport" layoutX="172.0" layoutY="389.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="76.0" styleClass="btn">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/export-orange-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ProgressBar fx:id="pbGenerateProgress" layoutY="180.0" prefHeight="14.0" prefWidth="404.0" progress="0.0" />
+                  <Button fx:id="btnGenerate" layoutX="325.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="74.0" styleClass="btn">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/generate.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <TextArea fx:id="taQRData" layoutX="4.0" layoutY="28.0" prefHeight="89.0" prefWidth="397.0" promptText="Enter QR Data here! [ NOTE: &#10;Ensure the input is as short as possible! ]" style="-fx-background-color: #fff;" />
+                  <Label fx:id="lbStatus" alignment="CENTER" layoutX="111.0" layoutY="205.0" prefHeight="17.0" prefWidth="182.0" text="Generated QR Preview" />
+                  <ImageView fx:id="ivGeneratedCode" fitHeight="119.0" fitWidth="93.0" layoutX="168.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/sample.JPG" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="115.0" layoutY="373.0" prefWidth="200.0" style="-fx-opacity: 0.4;" />
+                  <Hyperlink fx:id="hlExplain" layoutX="4.0" layoutY="137.0" text="Why short input?" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="14.0" prefHeight="451.0" prefWidth="156.0" style="-fx-border-color: white #dcdcdc white white; -fx-background-color: #FFF;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label layoutX="6.0" layoutY="14.0" prefHeight="17.0" prefWidth="146.0" text="Recent QR Images" />
+            <Separator layoutX="4.0" layoutY="38.0" prefHeight="14.0" prefWidth="146.0" style="-fx-opacity: 0.4;" />
+            <ListView fx:id="lvRecent" layoutX="6.0" layoutY="52.0" prefHeight="347.0" prefWidth="146.0" style="-fx-border-color: #fff;" />
+            <ProgressIndicator fx:id="piLoadImages" layoutX="2.0" layoutY="407.0" prefHeight="40.0" prefWidth="146.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="626.0" maxWidth="860.0" minHeight="626.0" minWidth="860.0" prefHeight="626.0" prefWidth="860.0" style="-fx-background-color: #fff;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.MainUIController">
+   <children>
+      <AnchorPane fx:id="apWrapper" layoutY="92.0" prefHeight="470.0" prefWidth="860.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0" />
+      <AnchorPane layoutX="365.0" maxHeight="95.0" maxWidth="783.0" minHeight="95.0" minWidth="783.0" prefHeight="95.0" prefWidth="783.0" style="-fx-border-color: #D4CFC7  #D4CFC7 gray  #D4CFC7; -fx-background-color: #D4CFC7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnAbout" layoutX="707.0" layoutY="36.0" minWidth="50.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="50.0" styleClass="btn" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="48.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/about-orange.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="6.0" layoutY="30.0" prefHeight="17.0" prefWidth="853.0" text="QRCODE GENERATOR V 1.0.3" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+            <Button fx:id="btnBack" layoutX="4.0" layoutY="49.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="50.0" styleClass="btn" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="47.0">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/back-orange-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSettings" layoutX="758.0" layoutY="49.0" minWidth="40.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="50.0" styleClass="btn" AnchorPane.bottomAnchor="2.0" AnchorPane.topAnchor="48.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/tools-orange.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="544.0" prefHeight="63.0" prefWidth="747.0" style="-fx-border-color: gray #fff #fff #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

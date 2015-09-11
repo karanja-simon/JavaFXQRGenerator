@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 6, 2015, 3:40:09 PM
+    Author     : Sammy Guergachi <sguergachi at gmail.com>
+*/
+
+.mypage {
+    -fx-background-color:linear-gradient(#cec340, #a59c31),linear-gradient(#fefefc, #e6dd71),linear-gradient(#fef592, #e5d848);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 0 0 0 0;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-border-insets: 1 1 1 1;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}
+.page-corner {
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    -fx-background-color: linear-gradient( from 0% 0% to 50% 50%, #fcf7b6, #a59c31);
+    -fx-shape: "M 0 0 V 40 H 40 V 0 z";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 4 , 0.0 , 0 , 0 );
+}
+.settings {
+    -fx-background-color:linear-gradient(#cec340, #a59c31),linear-gradient(#fefefc, #e6dd71),linear-gradient(#fef592, #e5d848);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-border-insets: 0;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}
+.settings-arrow{
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    //-fx-background-color: linear-gradient( from 0% 0% to 50% 50%, #fcf7b6, #a59c31);
+    //-fx-border-color:  #ff5500   #fff #fff #ff5500;
+    //-fx-border-color: gray hidden #fff hidden;
+    -fx-shape: "M 0 0 V 40 H 40 V 0 z";
+    //-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 4 , 0.0 , 0 , 0 );
+}
+.myarrow {
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    -fx-background-color: linear-gradient( from 0% 0% to 50% 50%, #fcf7b6, #a59c31);
+    -fx-shape: "M 0 0 V 40 H 40 V 0 z";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 4 , 0.0 , 0 , 0 );
+    -fx-border-color: #1d1d1d #fff #fff #ff5500;
+    -fx-border-style: solid none hidden none;
+    
+}

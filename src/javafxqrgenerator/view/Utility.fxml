@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="60.0" minWidth="470.0" prefHeight="60.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.UtilityController">
+   <children>
+      <Label fx:id="lbMessage" alignment="CENTER" layoutX="8.0" layoutY="12.0" prefHeight="41.0" prefWidth="449.0" text="Save Ok." />
+   </children>
+</AnchorPane>

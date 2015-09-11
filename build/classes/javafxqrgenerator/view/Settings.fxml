@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="468.0" style="-fx-background-color: transparent;" stylesheets="@../css/CustomTooltip.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxqrgenerator.controller.SettingsController">
+   <children>
+      <AnchorPane layoutX="41.0" layoutY="33.0" prefHeight="328.0" prefWidth="345.0" style="-fx-border-color: gray; -fx-background-color: white;" styleClass="settings" stylesheets="@../css/Metro-UI.css">
+         <children>
+            <Button fx:id="btnClose" layoutX="306.0" layoutY="8.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="28.0" style="-fx-min-width: 10;" styleClass="btn" text="Button" AnchorPane.rightAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/close-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="19.0" layoutY="23.0" prefHeight="17.0" prefWidth="225.0" text="APPLICATION SETTINGS" />
+            <Separator layoutX="14.0" layoutY="49.0" opacity="0.57" prefHeight="3.0" prefWidth="335.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="24.0" layoutY="81.0" prefHeight="17.0" prefWidth="133.0" text="No. Of Images In Recent" />
+            <TextField fx:id="tfHistorySize" layoutX="173.0" layoutY="117.0" prefHeight="27.0" prefWidth="60.0" />
+            <Button fx:id="btnOk" graphicTextGap="0.0" layoutX="301.0" layoutY="267.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" styleClass="btn-round" text="OK" />
+            <Separator layoutX="14.0" layoutY="260.0" opacity="0.46" prefHeight="3.0" prefWidth="320.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="33.0" layoutY="168.0" prefHeight="17.0" prefWidth="124.0" text="Sort History Results By" />
+            <RadioButton fx:id="rbInfinite" layoutX="172.0" layoutY="78.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="74.0" selected="true" text="Infinite" underline="true" />
+            <RadioButton fx:id="rbCustom" layoutX="247.0" layoutY="78.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="90.0" text="Custom" />
+            <RadioButton fx:id="tbSortDate" layoutX="171.0" layoutY="164.0" mnemonicParsing="false" selected="true" text="Date">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgSort" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="tbSortSize" layoutX="244.0" layoutY="165.0" mnemonicParsing="false" text="Size" toggleGroup="$tgSort" />
+            <Label fx:id="lblImages" alignment="TOP_RIGHT" layoutX="24.0" layoutY="122.0" prefHeight="17.0" prefWidth="133.0" text="Define No. Of Images" textAlignment="RIGHT" />
+            <Label alignment="CENTER_RIGHT" layoutX="33.0" layoutY="213.0" prefHeight="17.0" prefWidth="124.0" text="Generate Colored QR" />
+            <CheckBox disable="true" layoutX="174.0" layoutY="212.0" mnemonicParsing="false" selected="true" text="OFF" underline="true" />
+            <Label fx:id="lbMsg" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="283.0" prefHeight="17.0" prefWidth="275.0" text="Saved. Restart the App for Settings to take Effect" textFill="#074afa" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="208.0" layoutY="23.0" prefHeight="20.0" prefWidth="20.0" rotate="45.0" style="-fx-background-color: white; -fx-border-color: gray;" />
+      <AnchorPane layoutX="200.0" layoutY="33.0" prefHeight="20.0" prefWidth="38.0" style="-fx-background-color: white;" AnchorPane.topAnchor="34.0" />
+   </children>
+</AnchorPane>
