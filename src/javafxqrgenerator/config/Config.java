@@ -74,7 +74,7 @@ public class Config {
             });
             utilityStage.show();
         } catch (IOException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            System.out.println("DEBUG: " + ex.getMessage());
         }
     }
 
@@ -110,7 +110,7 @@ public class Config {
             sc.close(utilityStage);
             utilityStage.show();
         } catch (IOException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            System.out.println("DEBUG: " + ex.getMessage());
         }
     }
 
@@ -151,7 +151,7 @@ public class Config {
             });
             utilityStage.show();
         } catch (IOException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            System.out.println("DEBUG: " + ex.getMessage());
         }
     }
 
@@ -192,7 +192,7 @@ public class Config {
             });
             utilityStage.show();
         } catch (IOException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            System.out.println("DEBUG: " + ex.getMessage());
         }
     }
 
