@@ -66,7 +66,6 @@ public class MainUIController implements Initializable {
         btnSettings.setOnAction((ActionEvent event) -> {
             config.showSettingsDialog(((Button) event.getSource()).getParent().getScene().getWindow(), (Button) event.getSource());
         });
-        System.out.println("------Am loading.....");
     }
 
 }
