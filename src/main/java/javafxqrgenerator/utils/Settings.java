@@ -5,6 +5,9 @@
  */
 package javafxqrgenerator.utils;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
 
 /**
@@ -15,7 +18,7 @@ public class Settings {
 
     private final Preferences prefs = Preferences.userNodeForPackage(getClass());
 
-    public void setHistorySize(int size) {
+    public void setHistorySize(int size) {        
         prefs.putInt("history-size", size);
     }
 

@@ -119,7 +119,10 @@ public class GeneratorModel {
      * @return
      */
     public boolean loadAutoSavedQRImages() {
-        File folder = new File("codes/");
+        File folder = new File(System.getProperty("java.io.tmpdir") + "/codes/");
+        if (folder.exists() == false) {
+            folder.mkdir();
+        }
         File[] listOfFiles = folder.listFiles();
         int historySize = listOfFiles.length;
         if (preference.getHistorySize() > 0) {
@@ -143,7 +146,7 @@ public class GeneratorModel {
     public void initDevCode() throws Exception {
         InputStream input = getClass().getResourceAsStream("/javafxqrgenerator/dev/devqr.jpg");
         Boolean makeDir = new File("codes").mkdir();
-        OutputStream outputStream = new FileOutputStream(new File("codes/1435955064074.JPG"));
+        OutputStream outputStream = new FileOutputStream(new File(System.getProperty("java.io.tmpdir") + "/codes/1435955064074.JPG"));
         int read = 0;
         byte[] bytes = new byte[1024];
         while ((read = input.read(bytes)) != -1) {

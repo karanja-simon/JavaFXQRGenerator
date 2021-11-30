@@ -50,9 +50,9 @@ public class QRGenerator {
     public static boolean generateQRImage(String data) {
         String timePrint = String.valueOf(System.currentTimeMillis());
         ByteArrayOutputStream out = QRCode.from(data).to(ImageType.PNG).stream();
-        generatedQR = "codes/" + timePrint + ".JPG";
+        generatedQR = System.getProperty("java.io.tmpdir")+"/codes/" + timePrint + ".JPG";
         try {
-            new File("codes").mkdir();
+            new File(System.getProperty("java.io.tmpdir")+"/codes").mkdir();
             File f = new File(generatedQR);
             f.createNewFile();
             try (FileOutputStream fout = new FileOutputStream(f)) {

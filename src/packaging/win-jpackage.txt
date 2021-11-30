@@ -14,5 +14,6 @@
 --win-upgrade-uuid ${windows.upgrade.uuid}
 --description "${project.description}"
 --copyright "(C) ${windows.vendor}"
+--resource-dir ${project.basedir}\res\win
 --java-options -XX:+UseZGC
 --java-options --add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED 
