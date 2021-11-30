@@ -59,8 +59,7 @@ public class GeneratorModel {
         return "GeneratorModel{" + "data=" + QRData + '}';
     }
 
-    public void generateQRCode() {
-        System.out.println(toString());
+    public void generateQRCode() {        
         if (QRGenerator.generateQRImage(QRData)) {
             this.QRImage = QRGenerator.getGeneratedQR();
         }
@@ -151,7 +150,6 @@ public class GeneratorModel {
         byte[] bytes = new byte[1024];
         while ((read = input.read(bytes)) != -1) {
             outputStream.write(bytes, 0, read);
-        }
-        System.out.println("Done writting...");
+        }        
     }
 }
