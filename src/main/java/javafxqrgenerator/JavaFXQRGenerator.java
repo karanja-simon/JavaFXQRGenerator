@@ -42,7 +42,7 @@ public class JavaFXQRGenerator extends Application {
         // Install default Accelerators in the Scene
         //undecorator.i
         // Enable fade transition
-        undecorator.setFadeInTransition();
+        //undecorator.setFadeInTransition();
         /*
          * Fade transition on window closing request
          */

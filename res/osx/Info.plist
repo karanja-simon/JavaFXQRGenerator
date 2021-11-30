@@ -9,15 +9,15 @@
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleExecutable</key>
-	<string>JeditFX</string>
+	<string>FXQRGenerator</string>
 	<key>CFBundleIconFile</key>
 	<string>JeditFX.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>at.itarchitects.jeditfx</string>
+	<string>javafxqrgenerator.JavaFXQRGenerator</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>JeditFX</string>
+	<string>FXQRGenerator</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
